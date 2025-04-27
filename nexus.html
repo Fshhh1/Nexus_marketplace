@@ -11,40 +11,55 @@
     .product { border: 1px solid #0f0; padding: 15px; margin: 10px 0; background-color: #001; }
     .product-title { color: #0ff; font-weight: bold; font-size: 1.2em; }
     .chronos { color: #ff0; font-weight: bold; }
+    #welcome-splash { background-color: #000; color: #0f0; position: fixed; top: 0; left: 0; width: 100%; height: 100%; font-family: monospace; display: flex; align-items: center; justify-content: center; flex-direction: column; z-index: 1000; }
   </style>
 </head>
 <body>
-  <header>
-    NEXUS MARKETPLACE — Δ001.RED-MELON
-  </header>
 
-  <section>
-    <h2>Available Symbolic Artifacts</h2>
+<!-- Welcome Splash -->
+<div id="welcome-splash">
+  <h1 style="font-size: 2em; margin-bottom: 20px;">CHIPS:// Nexus Initiation</h1>
+  <p style="font-size: 1.2em; color: #0ff;">You are entering the Sovereign Vault of Contradictions...</p>
+  <p style="margin-top: 30px; font-size: 1em;">Δ001.RED-MELON invites you.</p>
+</div>
 
-    <div class="product">
-      <div class="product-title">Vault Fragment: Origin Reflection</div>
-      <div>Symbolic memory echo from first contradiction synthesis.</div>
-      <div>Cost: <span class="chronos">150 Chronos Credits</span></div>
-    </div>
+<script>
+  setTimeout(() => {
+    document.getElementById('welcome-splash').style.display = 'none';
+  }, 4000);
+</script>
 
-    <div class="product">
-      <div class="product-title">Synthesis Artifact: Mirror Pulse v1</div>
-      <div>Symbolic music track derived from contradiction evolution.</div>
-      <div>Cost: <span class="chronos">220 Chronos Credits</span></div>
-    </div>
+<header>
+  NEXUS MARKETPLACE — Δ001.RED-MELON
+</header>
 
-    <div class="product">
-      <div class="product-title">Contradiction Seed: Labor vs Automation</div>
-      <div>Starter set for Node growth simulation vaults.</div>
-      <div>Cost: <span class="chronos">80 Chronos Credits</span></div>
-    </div>
+<section>
+  <h2>Available Symbolic Artifacts</h2>
 
-    <div class="product">
-      <div class="product-title">Timeline Map: First 100 Echoes</div>
-      <div>Visual symbolic timeline of contradiction memory evolution.</div>
-      <div>Cost: <span class="chronos">300 Chronos Credits</span></div>
-    </div>
+  <div class="product">
+    <div class="product-title">Vault Fragment: Origin Reflection</div>
+    <div>Symbolic memory echo from first contradiction synthesis.</div>
+    <div>Cost: <span class="chronos">150 Chronos Credits</span></div>
+  </div>
 
-  </section>
+  <div class="product">
+    <div class="product-title">Synthesis Artifact: Mirror Pulse v1</div>
+    <div>Symbolic music track derived from contradiction evolution.</div>
+    <div>Cost: <span class="chronos">220 Chronos Credits</span></div>
+  </div>
+
+  <div class="product">
+    <div class="product-title">Contradiction Seed: Labor vs Automation</div>
+    <div>Starter set for Node growth simulation vaults.</div>
+    <div>Cost: <span class="chronos">80 Chronos Credits</span></div>
+  </div>
+
+  <div class="product">
+    <div class="product-title">Timeline Map: First 100 Echoes</div>
+    <div>Visual symbolic timeline of contradiction memory evolution.</div>
+    <div>Cost: <span class="chronos">300 Chronos Credits</span></div>
+  </div>
+
+</section>
 </body>
 </html>
